@@ -1,17 +1,17 @@
-import Image from "next/image";
+import Head from "next/head";
+import Header from "./header";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, title, description }) => {
   return (
-    <div className="fixed h-screen w-full ">
-      <Image
-        src="/img/bg.jpg"
-        alt="background image"
-        fill
-        priority
-        objectFit="cover"
-      />
+    <>
+      <Head>
+        <title>{`Pizza Store - ${title}`}</title>
+        <meta name="description" content={description} />
+      </Head>
+
+      <Header />
       {children}
-    </div>
+    </>
   );
 };
 

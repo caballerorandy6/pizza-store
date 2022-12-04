@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-overlay {
+  background-image: linear-gradient(
+    to right,
+    rgb(0 0 0 / 0.5),
+    rgb(0 0 0 / 0.6)
+  );
+}
+
+li span.active {
+  font-weight: bold;
+}
+li span.active::before {
+  content: ">";
+  position: relative;
+  top: -2px;
+  margin-right: 6px;
+  transform: scale(0.8, 1);
+  display: inline-block;
+}
