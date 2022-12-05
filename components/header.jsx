@@ -33,7 +33,7 @@ const Header = () => {
       <div className="-z-10 fixed h-screen bg-overlay w-full">
         <Image
           className="mix-blend-overlay bg-gradient-to-tr"
-          src="/img/bg.jpg"
+          src="https://cdn.pixabay.com/photo/2017/10/01/16/26/pizza-2806042_960_720.jpg"
           alt="background image"
           layout="fill"
           priority
