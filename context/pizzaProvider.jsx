@@ -5,12 +5,12 @@ const PizzaContext = createContext();
 const PizzaProvider = ({ children }) => {
   const bases = ["Classic", "Thin & Crispy", "ThickCrust"];
   let toppings = [
-    "mushrooms",
-    "peppers",
-    "onions",
-    "olives",
-    "extra cheese",
-    "tomatoes",
+    "Mushrooms",
+    "Peppers",
+    "Onions",
+    "Olives",
+    "Extra cheese",
+    "Tomatoes",
   ];
   const [pizza, setPizza] = useState({ base: "", toppings: [] });
 
